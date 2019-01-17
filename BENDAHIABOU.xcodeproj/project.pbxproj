@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C351391321F098E10060F0FF /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351391221F098E10060F0FF /* TitleView.swift */; };
+		C351391521F09A2D0060F0FF /* CD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351391421F09A2D0060F0FF /* CD.swift */; };
+		C351391921F0A0D60060F0FF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351391821F0A0D60060F0FF /* TableViewCell.swift */; };
+		C351391B21F0A2A80060F0FF /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351391A21F0A2A80060F0FF /* TitleViewController.swift */; };
 		C38AA28A21E7715D00681B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AA28921E7715D00681B60 /* AppDelegate.swift */; };
 		C38AA28F21E7715D00681B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38AA28D21E7715D00681B60 /* Main.storyboard */; };
 		C38AA29221E7715D00681B60 /* BENDAHIABOU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C38AA29021E7715D00681B60 /* BENDAHIABOU.xcdatamodeld */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C351391221F098E10060F0FF /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		C351391421F09A2D0060F0FF /* CD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CD.swift; sourceTree = "<group>"; };
+		C351391821F0A0D60060F0FF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C351391A21F0A2A80060F0FF /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		C38AA28621E7715D00681B60 /* BENDAHIABOU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BENDAHIABOU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38AA28921E7715D00681B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38AA28E21E7715D00681B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				C38AA29521E7716700681B60 /* LaunchScreen.storyboard */,
 				C38AA29821E7716700681B60 /* Info.plist */,
 				C38AA29021E7715D00681B60 /* BENDAHIABOU.xcdatamodeld */,
+				C351391221F098E10060F0FF /* TitleView.swift */,
+				C351391421F09A2D0060F0FF /* CD.swift */,
+				C351391821F0A0D60060F0FF /* TableViewCell.swift */,
+				C351391A21F0A2A80060F0FF /* TitleViewController.swift */,
 			);
 			path = BENDAHIABOU;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C351391921F0A0D60060F0FF /* TableViewCell.swift in Sources */,
 				C38AA28A21E7715D00681B60 /* AppDelegate.swift in Sources */,
 				C38AA29221E7715D00681B60 /* BENDAHIABOU.xcdatamodeld in Sources */,
+				C351391521F09A2D0060F0FF /* CD.swift in Sources */,
+				C351391321F098E10060F0FF /* TitleView.swift in Sources */,
+				C351391B21F0A2A80060F0FF /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
