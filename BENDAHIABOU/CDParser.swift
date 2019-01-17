@@ -51,7 +51,9 @@ class CDParser: NSObject, XMLParserDelegate{
             cd.date = date
             cd.options = options
             cd.author = author
-            authors.append(cd.author)
+            if !authors.contains(cd.author) {
+                authors.append(cd.author)
+            }
             cds.append(cd)
         }
         

@@ -10,12 +10,8 @@ import UIKit
 
 class TitleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
     var parser: CDParser = CDParser()
     var cds: [CD] = []
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +54,6 @@ class TitleViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
-    
-
     
     @IBOutlet weak var tableViewCon: UITableView!
     

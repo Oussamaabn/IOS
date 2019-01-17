@@ -19,7 +19,20 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
     var inAuthorScene = false
     
     var cds = [CD]()
-    var filteredCds = [CD]()
+    var filterCds = [CD]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return inSearchMode ? filterCds.count : cds.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return inAuthorScene ? cds.count : 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return inAuthorScene ? cds[section].author : ""
+    }
     
     override func viewDidLoad() {
         
@@ -44,7 +57,7 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
             inAuthorScene = false
             inTitleScene = false
             searchBar.delegate = self
-            filteredCds = cds
+            filterCds = cds
             break
         case "Auteurs":
             inAuthorScene = true
@@ -55,26 +68,12 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
             break
         }
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return inSearchMode ? filteredCds.count : cds.count
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return inAuthorScene ? cds.count : 1
-    }
-    
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return inAuthorScene ? cds[section].author : ""
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
         
         let cd :CD?
         if inSearchMode {
-            cd = filteredCds[indexPath.row]
+            cd = filterCds[indexPath.row]
         } else {
             cd = cds[indexPath.row]
         }
@@ -91,7 +90,7 @@ class SearchController: UIViewController, UITableViewDataSource, UITableViewDele
             inSearchMode = false
         } else {
             inSearchMode = true
-            filteredCds = cds.filter { cd in cd.options.lowercased().contains(searchBar.text!.lowercased()) }
+            filterCds = cds.filter { cd in cd.options.lowercased().contains(searchBar.text!.lowercased()) }
         }
         tableView.reloadData()
     }
