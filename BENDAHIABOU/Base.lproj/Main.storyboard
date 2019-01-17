@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DqB-eN-NoA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Auteurs" image="Image-1" id="c3f-Dn-Uhb"/>
+                    <tabBarItem key="tabBarItem" title="Auteurs" image="baseline_person_black_24dp" id="c3f-Dn-Uhb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itf-KE-k7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,7 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aWY-Mw-kkM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="Image" id="qcc-m0-6f4"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="baseline_search_black_24dp" id="qcc-m0-6f4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4c-eg-6hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +53,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jkC-B6-FOe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Titres" image="baseline_trip_origin_black_36pt_2x" id="Bka-tq-AXd"/>
+                    <tabBarItem key="tabBarItem" title="Titres" image="baseline_list_black_24dp" id="Bka-tq-AXd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvs-eW-gQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,8 +80,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="54" height="54"/>
-        <image name="Image-1" width="54" height="54"/>
-        <image name="baseline_trip_origin_black_36pt_2x" width="54" height="54"/>
+        <image name="baseline_list_black_24dp" width="48" height="48"/>
+        <image name="baseline_person_black_24dp" width="48" height="48"/>
+        <image name="baseline_search_black_24dp" width="48" height="48"/>
     </resources>
 </document>
