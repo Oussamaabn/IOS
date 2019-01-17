@@ -8,19 +8,11 @@
 
 import Foundation
 
-class CD {
+class CD : NSObject {
     
-    //private var image:String
-    var title:String
-    var date:String
-    var options:String
-    var author:String
+    var title:String = String()
+    var date:String = String()
+    var options:String = String()
+    var author:String = String()
     
-    init (title:String, date:String, options:String, author:String) {
-        //self.image=image
-        self.title=title
-        self.date=date
-        self.options=options
-        self.author=author
-    }
 }
